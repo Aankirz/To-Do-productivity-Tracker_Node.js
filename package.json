@@ -1,0 +1,22 @@
+{
+  "name": "to-do-productivity-tracker_node",
+  "version": "1.0.0",
+  "description": "Creating A To-do List using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aankirz/To-Do-productivity-Tracker_Node.js.git"
+  },
+  "author": "Ankit Kiran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aankirz/To-Do-productivity-Tracker_Node.js/issues"
+  },
+  "homepage": "https://github.com/Aankirz/To-Do-productivity-Tracker_Node.js#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
