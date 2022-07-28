@@ -1,0 +1,36 @@
+body{
+    background-color: turquoise;
+    text-align: center;
+    color: white;
+    background-color: rgb(2, 2, 5);
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(2, 2, 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #fff;
+    position: relative;
+    width:800px;
+   
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+#toggle{
+    position: absolute;
+    left: 21px;
+    top: 28px;
+}

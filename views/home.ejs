@@ -6,7 +6,8 @@
     <title>
         <%=title%>
     </title>
-    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/595b1dac94.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
      <h1>To Do App</h1>
@@ -14,7 +15,15 @@
     <form action="/create-todo" method="post">
         
         <input type="text" name="task" placeholder="Add a Todo">
-        <!-- <input type="radio" name="category"> -->
+        <select name="category" id="category">
+            <option value="">Select a Category</option>
+            <option value="alert">Alert</option>
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+            <option value="college">College</option>
+            
+           
+        </select>
         <input type="date" name="date">
      <button type="submit">
         Add Todo
@@ -25,10 +34,15 @@
     <ul>
         <% for(let i of todos){%>
         <li>
+            <input type="checkbox" id="toggle">
            <p><%=i.task%></p> 
-            <!-- <%=i.category%> -->
-            <%=i.date%>
-            
+           <p><%=i.date%></p> 
+            <p><%=i.category%></p>
+          <div class="delete-button">
+            <a href="/delete-task/?id=<%= i._id %>">
+                <i class="fa-solid fa-trash-arrow-up"></i>
+            </a>
+          </div>
         </li>
         <%}%>
     </ul>
