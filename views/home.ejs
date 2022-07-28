@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+     <h1>To Do App</h1>
+   
+    <form action="/create-todo" method="post">
+        
+        <input type="text" name="task" placeholder="Add a Todo">
+        <!-- <input type="radio" name="category"> -->
+        <input type="date" name="date">
+     <button type="submit">
+        Add Todo
+     </button>
+     
+    </form>
+     
+    <ul>
+        <% for(let i of todos){%>
+        <li>
+           <p><%=i.task%></p> 
+            <!-- <%=i.category%> -->
+            <%=i.date%>
+            
+        </li>
+        <%}%>
+    </ul>
+    
+
+</body>
+</html>

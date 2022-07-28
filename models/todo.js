@@ -6,14 +6,16 @@ const toDoSchema=mongoose.Schema({
         required:true
     },
     date:{
-        type:Date,
-        default:Date.now
+        type:String,
+        required:true,
+    
+
         
     },
-    category:{
-        type:String,
-        required:true
-    }
+    // category:{
+    //     type:String,
+    //     required:true
+    // }
 });
 
 const Todo=mongoose.model('Todo',toDoSchema);
