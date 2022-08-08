@@ -13,22 +13,31 @@
      <h1>To Do App</h1>
    
     <form action="/create-todo" method="post">
-        
-        <input type="text" name="task" placeholder="Add a Todo">
-        <select name="category" id="category">
-            <option value="">Select a Category</option>
-            <option value="alert">Alert</option>
-            <option value="personal">Personal</option>
-            <option value="work">Work</option>
-            <option value="college">College</option>
+        <div class="addTaskBox">
+            <div>
+                <!-- <h5>Description</h5> -->
+                <input type="text" name="task" placeholder="Add a Todo" class="toDoInput"  >
+
+            </div>
+            <span>
+                <select name="category" id="category">
+                    <option value="">Select a Category</option>
+                    <option value="alert">Alert</option>
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                    <option value="college">College</option>
+                    
+                   
+                </select>
+                <input type="date" name="date">
+             <button type="submit">
+                Add Todo
+             </button>
+             
+            </span>
             
-           
-        </select>
-        <input type="date" name="date">
-     <button type="submit">
-        Add Todo
-     </button>
-     
+        </div>
+        
     </form>
      
     <ul>

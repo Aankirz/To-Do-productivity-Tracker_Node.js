@@ -1,15 +1,14 @@
 body{
-    background-color: turquoise;
     text-align: center;
     color: white;
-    background-color: rgb(2, 2, 5);
+    background-color: #bfbfbf;
 }
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(2, 2, 5);
+    background-color: #bfbfbf;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,6 +27,56 @@ p{
     font-size: 20px;
     text-align: center;
     padding: 10px;
+}
+.addTaskBox{
+    /* border: 2px solid #fff; */
+    width: 800px;
+    height: 100px;
+   
+    display: flex;
+    flex-direction: column;
+}
+/* .addTaskBox h5{
+    margin: 0%;
+    text-align: left;
+} */
+.addTaskBox .toDoInput{
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 10px;
+  border-radius: 21px;
+background: #daaaaa;
+box-shadow:  5px 5px 10px #574444,
+             -5px -5px 10px #ffffff;
+  /* From https://css.glass */
+/* background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.26);             */
+}
+.addTaskBox span{
+    display: flex;
+    flex-direction: row;
+    
+}
+.addTaskBox select{
+  padding: 10px;
+    
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+background: #daaaaa;
+box-shadow:  5px 5px 10px #574444,
+             -5px 0px 10px #ffffff;
+    /* border-radius: 35px;
+    background: #bfbfbf;
+    box-shadow: inset 5px 5px 10px #999999,
+                inset -5px -5px 10px #e5e5e5;
+    From https://css.glass */
 }
 #toggle{
     position: absolute;
