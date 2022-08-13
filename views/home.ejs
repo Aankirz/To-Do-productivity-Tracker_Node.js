@@ -14,10 +14,9 @@
    
     <form action="/create-todo" method="post">
         <div class="addTaskBox">
-            <div>
-                <!-- <h5>Description</h5> -->
-                <input type="text" name="task" placeholder="Add a Todo" class="toDoInput"  >
-
+            <div class="form__group field">
+                <input required="" placeholder="Add  Task" class="form__field" type="input">
+                <label class="form__label" for="addTask">Add Task</label>
             </div>
             <span>
                 <select name="category" id="category">
@@ -56,6 +55,10 @@
         <%}%>
     </ul>
     
+    <!-- <div class="bg-img">
+      
+        <img src="/images/bg-img.png" alt="">
+    </div> -->
 
 </body>
 </html>
