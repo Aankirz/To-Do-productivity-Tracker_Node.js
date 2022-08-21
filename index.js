@@ -42,6 +42,7 @@ app.get('/delete-task',function(req,res){
                 console.log('Error in deleting the task');
                 return;
             }
+           
             return res.redirect('back');
      })
 })

@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
 body{
     text-align: center;
     color: #051937;
-    background-color: #fff;
+    background-color: #e9e1ec;
+    font-family: 'Titillium Web', sans-serif;
+    
+
+}
+h1{
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+     padding: 10px;
 }
 ul{
+   
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,10 +27,20 @@ li{
     list-style-type: none;
     display: flex;
     justify-content: center;
-    border: 2px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    /* border: 2px solid rgb(255, 0, 0); */
     position: relative;
     width:800px;
-   
+    color: #0b1420;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+
+    margin: 10px;
+}
+li:hover{
+ background-color: #E5EDF5;
+ box-shadow: -4px -2px 8px 0px #ffffff, 4px 2px 8px 0px rgb(95 157 231 / 48%);
+
 }
 p{
     font-size: 20px;
@@ -29,66 +48,77 @@ p{
     padding: 10px;
 }
 .addTaskBox{
-    /* border: 2px solid #fff; */
+    /* border: 2px solid rgb(144, 0, 0);
+    border: 2px 0px 2px 0px; */
+    position: relative;
     width: 800px;
     height: 100px;
-   
+   transform: translateX(39%);
     display: flex;
     flex-direction: column;
+    margin: 50px 0px;
+    
 }
-/* .addTaskBox h5{
-    margin: 0%;
-    text-align: left;
-} */
-.addTaskBox .toDoInput{
-  width: 100%;
-  height: 50px;
-  border: none;
-  padding: 10px;
-  border-radius: 21px;
-background: #daaaaa;
-box-shadow:  5px 5px 10px #574444,
-             -5px -5px 10px #ffffff;
-  /* From https://css.glass */
-/* background: rgba(255, 255, 255, 0);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.26);             */
-}
+
+
 .addTaskBox span{
     display: flex;
     flex-direction: row;
     
 }
 .addTaskBox select{
-  padding: 10px;
-    
-    width: 300px;
-    height: 50px;
+    position: relative;
+    width: 49%;
+    height: auto;
     border: none;
     border-radius: 10px;
-background: #daaaaa;
-box-shadow:  5px 5px 10px #574444,
-             -5px 0px 10px #ffffff;
-    /* border-radius: 35px;
-    background: #bfbfbf;
-    box-shadow: inset 5px 5px 10px #999999,
-                inset -5px -5px 10px #e5e5e5;
-    From https://css.glass */
+    color: #7e97b8;
+    border-style: solid;
+ border-width: 2px 2px 2px 2px;
+ border-color: rgba(255, 255, 255, 0.333);
+background: #E5EDF5;
+box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+padding: 16px 24px 12px 10px;
+    margin-right: 2px;
+}
+.addTaskBox select:hover{
+    color: #516d91;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+.addTaskBox .date{
+  width: 30%;
+  color: #7e97b8;
+  border-radius: 10px;
+    border-style: solid;
+ border-width: 2px 2px 2px 2px;
+ border-color: rgba(255, 255, 255, 0.333);
+background: #E5EDF5;
+box-shadow: 2px 1px 8px 0px #ffffff, -2px -1px 8px 0px rgb(95 157 231 / 48%);
+padding: 16px 24px 12px 10px;
+ 
+}
+.addTaskBox button{
+    
 }
 #toggle{
     position: absolute;
     left: 21px;
     top: 28px;
+    width: 30px;
+    height: 20px;
+    border-radius: 20px;
+    border: linear-gradient(45deg, #f3d5f7, #fbf6e7, #e6fcf5);
+   
+                
 }
+/* Input style */
 .form__group {
     position: relative;
     padding: 20px 0 0;
     margin-top: 10px;
     width: 100%;
-    max-width: 180px;
+    margin-bottom: 10px;
   }
   
   .form__field {
@@ -98,10 +128,11 @@ box-shadow:  5px 5px 10px #574444,
     border-bottom: 2px solid #051937;
     outline: 0;
     font-size: 17px;
-    color: #fff;
+    color: #051937;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
+    
   }
   
   .form__field::placeholder {
@@ -146,4 +177,63 @@ box-shadow:  5px 5px 10px #574444,
   .form__field:required, .form__field:invalid {
     box-shadow: none;
   }
-  
+  /* Styling of button */
+  button {
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #7e97b8;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: auto;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+   }
+   
+   button:hover {
+    color: #516d91;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+   }
+   
+   button:active {
+    box-shadow: none;
+   }
+
+   li .delete-button button {
+    position: absolute;
+    right: 3%;
+    top: 20%;
+    color: #090909;
+    padding: 0.7em 0.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+                
+   }
+   
+   li .delete-button button:hover {
+    border: 1px solid white;
+   }
+   
+   li .delete-button button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+   }
+   
